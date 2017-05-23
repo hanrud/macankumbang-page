@@ -1,0 +1,31 @@
+body {
+  color: #fff;
+}
+
+.navbar {
+  background-color: #161118;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.jumbotron {
+  background-color: #1E1B2C;
+  margin-bottom: 0;
+}
+
+.jumbotron img {
+  width: 100%;
+}
+
+.jumbotron button {
+  margin-top: 70px;
+  width: 20%;
+}
+
+div.service {
+  background-color: #4B5286;
+}
