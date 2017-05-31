@@ -10,21 +10,23 @@
 	<link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#hamburger-navbar">
 	<nav role="navigation" class="navbar navbar-fixed-top">
-		<div class="container-fluid">
+		<div class="container-fluid" id="home">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand"><strong>Macan</strong>kumbang</a>
-				<button type="button" class="navbar-toggle collapsed hamburger" data-toggle="collapse" data-target="#navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-      </button>
+				<div class="hamburger">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navbar" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+				</div>
 			</div>
-			<div class="navbar-collapse collapse" id="navbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
+			<div class="collapse navbar-collapse" id="hamburger-navbar">
+				<ul class="nav navbar-nav navbar-right" role="tablist">
+					<li class="active"><a href="#home">Home</a></li>
 					<li><a href="#service">Service</a></li>
 					<li><a href="#work">Work</a></li>
 					<li><a href="#customers">Testimonials</a></li>
@@ -33,9 +35,9 @@
 			</div>
 		</div>
 	</nav>
+
 	<div class="jumbotron">
 		<div class="container-fluid">
-			<!-- <div class="row"> -->
 			<div class="col-md-7">
 				<h2>Lorem ipsum dolor sit amet, consectetur.</h2>
 				<h3>Sed sagittis ornare nunc.</h3>
@@ -43,7 +45,6 @@
 			</div>
 			<div class="col-xs-8 col-md-5">
 				<img src="images/jumb_pict.jpg" alt="coffee" class="img-rounded img-responsive" />
-				<!-- </div> -->
 			</div>
 		</div>
 	</div>
@@ -88,8 +89,13 @@
 	</div>
 
 	<div class="portfolio container text-center">
-		<h2>Our Portfolio</h2>
-		<p>Our awesome works</p>
+		<div class="row">
+			<div class="portfolio-header col-xs-4 col-xs-offset-4">
+				<h2>Portfolio</h2>
+				<p>Our awesome works</p>
+				<div class="portfolio-header-line"></div>
+			</div>
+		</div>
 		<p><a class="active" href="#">All</a> / <a href="#"> Web</a> / <a href="#">Print</a></p>
 		<div class="row">
 			<div class="portfolio-image col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-4">
